@@ -1,0 +1,90 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    font-family: 'Times New Roman', Times, serif !important;
+    margin: 0;
+    padding: 0;
+}
+
+.pagina-login {
+    @apply min-h-screen bg-gray-100 flex items-center justify-center px-4;
+}
+
+.login-card {
+    @apply max-w-md w-full bg-white rounded-lg shadow-md p-8;
+}
+
+.form-login {
+    @apply space-y-6;
+}
+
+.campo {
+    @apply relative;
+}
+
+.campo input {
+    @apply w-full pl-10 pr-4 py-2 border rounded-lg focus:outline-none focus:border-red-500;
+}
+
+.campo i {
+    @apply absolute left-3 top-3 text-gray-400;
+}
+
+.botao {
+    @apply bg-red-500 hover:bg-red-600 text-white font-semibold py-2 px-4 rounded-lg transition-colors duration-200;
+}
+
+.botao-block {
+    @apply w-full;
+}
+
+.erro {
+    @apply text-red-500 text-sm text-center;
+}
+
+/* Admin Layout */
+.layout-admin {
+    @apply min-h-screen bg-gray-100;
+}
+
+.cabecalho-admin {
+    @apply bg-white shadow-sm px-6 py-4 flex justify-between items-center;
+}
+
+.cabecalho-esquerda {
+    @apply flex items-center gap-4;
+}
+
+.cabecalho-direita {
+    @apply flex items-center gap-4;
+}
+
+.barra-lateral {
+    @apply w-64 bg-white shadow-sm h-[calc(100vh-4rem)] p-4;
+}
+
+.conteudo-principal {
+    @apply flex-1 p-6;
+}
+
+.botao-sair {
+    @apply text-gray-600 hover:text-red-500;
+}
+
+.tabela-container {
+    @apply bg-white rounded-lg shadow overflow-hidden;
+}
+
+.acoes {
+    @apply flex gap-2;
+}
+
+.botao-icone {
+    @apply p-2 rounded-full hover:bg-gray-100;
+}
+
+.botao-perigo {
+    @apply text-red-500 hover:text-red-700;
+}
